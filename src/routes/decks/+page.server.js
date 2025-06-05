@@ -1,5 +1,5 @@
 import db from '$lib/db';
 
 export async function load() {
-  return {decks: await db.getDecks()}
+  return { decks: await db.getDecks() }
 }

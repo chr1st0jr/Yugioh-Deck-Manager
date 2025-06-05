@@ -2,7 +2,7 @@ import { MongoClient, ObjectId } from "mongodb"; // See https://www.mongodb.com/
 import { DB_URI } from "$env/static/private";
 import fs from 'fs/promises';
 import path from 'path';
-console.log("DB_URI:", DB_URI); 
+console.log("DB_URI:", DB_URI);
 
 const client = new MongoClient(DB_URI);
 

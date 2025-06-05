@@ -1,6 +1,6 @@
 <script>
-  let {data}= $props()
-  let decks = data.decks
+  let { data } = $props();
+  let decks = data.decks;
 </script>
 
 <h1>All Decks</h1>
@@ -15,11 +15,11 @@
   </thead>
   <tbody>
     {#each decks as deck}
-    <tr>
-     <td><a href={`/decks/${deck._id}`}>{deck._id}</td>
-     <td>{deck.owner}</td>
-     <td>{deck.archetype}</td>
-    </tr>
+      <tr>
+        <td><a href={`/decks/${deck._id}`}>{deck._id}</a></td>
+        <td>{deck.owner}</td>
+        <td>{deck.archetype}</td>
+      </tr>
     {/each}
   </tbody>
 </table>

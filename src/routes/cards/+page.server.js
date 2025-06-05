@@ -7,7 +7,7 @@ export async function load() {
 }
 
 export const actions = {
-    delete: async ({request}) => {
+    delete: async ({ request }) => {
         const data = await request.formData();
         console.log(data);
         await db.deleteCard(data.get("id"));
